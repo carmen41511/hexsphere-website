@@ -12,7 +12,7 @@ const Hero = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="wpo-blog-grids gallery-container clearfix">
-                                {heroBlog.slice(0, 2).map((blog, bitem) => (
+                                {heroBlog.slice(0, 1).map((blog, bitem) => (
                                     <div className="grid" key={bitem}>
                                         <div className="img-holder">
                                             <img src={blog.screens} alt className="img img-responsive" />
@@ -30,7 +30,7 @@ const Hero = () => {
                                     </div>
                                 ))}
 
-                                <div className="grid s2">
+                                {/* <div className="grid s2">
                                     {heroBlog.slice(2, 4).map((blog, bitem) => (
                                         <div className="img-holder" key={bitem}>
                                             <img src={blog.screens} alt className="img img-responsive" />
@@ -44,7 +44,7 @@ const Hero = () => {
                                             </div>
                                         </div>
                                     ))}
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
