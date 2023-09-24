@@ -4,6 +4,8 @@
 .wpo-blog-hero-area {
     .wpo-blog-grids {
         margin: 0 -7.5px;
+        display: flex;
+        justify-content: center;
 
         .grid {
             width: 25%;

@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom'
 import heroBlog from '../../api/heroBlogs'
 
 
+
 const Hero = () => {
     return (
         <div className="wpo-blog-hero-area">
             <div className="container">
-                <div className="sortable-gallery">
-                    <div className="gallery-filters"></div>
+                {/* <div className="sortable-gallery"> */}
+                    {/* <div className="gallery-filters"></div> */}
                     <div className="row">
-                        <div className="col-lg-12">
+                        {/* <div className="col-lg-12"> */}
                             <div className="wpo-blog-grids gallery-container clearfix">
                                 {heroBlog.slice(0, 1).map((blog, bitem) => (
                                     <div className="grid" key={bitem}>
@@ -30,6 +31,8 @@ const Hero = () => {
                                     </div>
                                 ))}
 
+
+
                                 {/* <div className="grid s2">
                                     {heroBlog.slice(2, 4).map((blog, bitem) => (
                                         <div className="img-holder" key={bitem}>
@@ -46,9 +49,9 @@ const Hero = () => {
                                     ))}
                                 </div> */}
                             </div>
-                        </div>
+                        {/* </div> */}
                     </div>
-                </div>
+                {/* </div> */}
 
             </div>
         </div>
