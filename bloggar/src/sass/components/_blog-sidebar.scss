@@ -4,6 +4,7 @@
 .blog-sidebar {
 	@include widther(992px) {
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 
 	@include media-query(991px) {

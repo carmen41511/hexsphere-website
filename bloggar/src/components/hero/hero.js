@@ -21,6 +21,24 @@ const Hero = () => {
                             <div className="wpo-blog-grids gallery-container clearfix">
                                 {heroBlog.slice(0, 1).map((blog, bitem) => (
                                     <div className="grid" key={bitem}>
+                                        <div className="blog-sidebar">
+                                            <div className="widget recent-post-widget">
+                                                <h3>Related Posts</h3>
+                                                {Highlight.slice(0, 5).map((blog, bitem) => (
+                                                    <div className="posts" key={bitem}>
+                                                        <div className="post">
+                                                            {/* <div className="img-holder">
+                                                                <img src={blog.screens} alt />
+                                                            </div> */}
+                                                            <div className="details">
+                                                                <span className="date">{blog.create_at} </span>
+                                                                <h4><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
                                         <div className="img-holder">
                                             <img src={blog.screens} alt className="img img-responsive" />
                                             <div className="wpo-blog-content">
@@ -40,9 +58,6 @@ const Hero = () => {
                                                 {Highlight.slice(0, 5).map((blog, bitem) => (
                                                     <div className="posts" key={bitem}>
                                                         <div className="post">
-                                                            <div className="img-holder">
-                                                                <img src={blog.screens} alt />
-                                                            </div>
                                                             <div className="details">
                                                                 <span className="date">{blog.create_at} </span>
                                                                 <h4><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h4>

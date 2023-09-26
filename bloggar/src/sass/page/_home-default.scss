@@ -7,6 +7,7 @@
         display: flex;
         justify-content: center;
         margin-top: 50px;
+        // margin-bottom: 50px;
 
         .grid {
             width: 100%;
@@ -62,6 +63,8 @@
                 border-radius: 15px;
                 overflow: hidden;
                 z-index: 1;
+                width: 1000px;
+                height: fit-content;
 
                 img {
                     border-radius: 15px;
@@ -455,6 +458,12 @@
 
     &.s2{
         padding-bottom: 0;
+    }
+
+    .container{
+        background-color: #EA3464;
+        border-radius: 10px;
+        padding: 30px;
     }
     
     .wpo-blog-sponsored-wrap {

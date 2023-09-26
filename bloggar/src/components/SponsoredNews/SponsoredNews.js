@@ -9,10 +9,10 @@ const SponsoredNews = () => {
     }
 
     return (
-        <section className="wpo-blog-sponsored-section section-padding">
+        <section className="wpo-blog-sponsored-section">
             <div className="container">
                 <div className="wpo-section-title">
-                    <h2>sponsored news</h2>
+                    <h2>Most Popular</h2>
                 </div>
                 <div className="row">
                     <div className="wpo-blog-sponsored-wrap">

@@ -13,9 +13,9 @@ const HomePage =() => {
         <Fragment>
             <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'}/>
             <Hero/>
-            <BreakingNews/>
-            <HighlightsNews/>
             <SponsoredNews/>
+            {/* <BreakingNews/> */}
+            <HighlightsNews/>
             <Subscribe/>
             <Footer/> 
             <Scrollbar/>

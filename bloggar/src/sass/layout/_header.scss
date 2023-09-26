@@ -183,11 +183,12 @@
 	/* style for navigation less than 992px */
 	/*navbar collaps less then 992px*/
 	/*** cart-search-contact ***/
-	background-color: #B2D1E3;
+	background-color: #F7FAFC;
 }
 
+
 .wpo-site-header .navigation {
-	background-color: #B2D1E3;
+	background-color: #F7FAFC;
 	margin-bottom: 0;
 	padding: 0;
 	border: 0;
@@ -196,6 +197,11 @@
 	-o-border-radius: 0;
 	-ms-border-radius: 0;
 	border-radius: 0;
+
+	.container{
+		background-color: #B2D1E3;
+	}
+
 }
 
 .sticky-header {
@@ -951,7 +957,7 @@
 .wpo-site-header {
 
 	.navigation {
-		background-color: #B2D1E3;
+		background-color: #F7FAFC;
 		margin-bottom: 0;
 		padding: 0;
 		border: 0;
@@ -1699,7 +1705,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #B2D1E3;
+    background: #F7FAFC;
     border: none;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
       -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
