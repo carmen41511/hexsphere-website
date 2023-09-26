@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import Logo from '../../images/logo.png'
+import funblocks_logo from '../../images/funblocks_logo.png'
 import Logo2 from '../../images/logo2.png'
 import Breaking from '../../api/breaking'
 
@@ -19,7 +19,7 @@ const Header = (props) => {
 
     return (
         <header id="header" className={props.topbarNone}>
-            <HeaderTopbar />
+            {/* <HeaderTopbar /> */}
             <div className={`wpo-site-header ${props.hclass}`}>
                 <nav className="navigation navbar navbar-expand-lg navbar-light">
                     <div className="container">
@@ -31,8 +31,8 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
-                                        alt="" /></Link>
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={funblocks_logo}
+                                        alt="" width="120" height="100" /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-1 col-1">
@@ -48,7 +48,7 @@ const Header = (props) => {
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link to="#">Pages</Link>
+                                            <Link to="#">News</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/blog">Archive</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/contact">Contact Us</Link></li>
@@ -61,10 +61,10 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
                                             </ul>
                                         </li>
-                                        <li><Link onClick={ClickHandler} to="/lifestyle">Lifestyle</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/foods">Foods</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/business">Business</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/travels">Travel</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/lifestyle">Videos</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/foods">Guides</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/business">Reviews</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/travels">Live Stream</Link></li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/blog">Blog</Link>
                                             <ul className="sub-menu">

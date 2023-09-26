@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import heroBlog from '../../api/heroBlogs'
 import Highlight from '../../api/Highlight'
+import HeaderTopbar from '../HeaderTopbar/HeaderTopbar'
 
 
 
@@ -14,6 +15,7 @@ const Hero = () => {
 
     return (
         <div className="wpo-blog-hero-area">
+            {/* <HeaderTopbar /> */}
             <div className="container">
                     <div className="row">
                             <div className="wpo-blog-grids gallery-container clearfix">
