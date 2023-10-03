@@ -24,7 +24,7 @@ const HomePage =() => {
             {/* <BreakingNews/> */}
             {/* <HighlightsNews/> */}
             
-            <Subscribe/>
+            {/* <Subscribe/> */}
             <Footer/> 
             <Scrollbar/>
         </Fragment>

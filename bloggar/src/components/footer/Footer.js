@@ -5,6 +5,8 @@ import ins1 from '../../images/ft-icon/1.png'
 import ins2 from '../../images/ft-icon/2.png'
 import ins3 from '../../images/ft-icon/3.png'
 import ins4 from '../../images/ft-icon/4.png'
+import funblocks_logo from '../../images/funblocks_logo.png'
+
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -22,7 +24,7 @@ const Footer = (props) => {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <img src={Logo} alt="blog" />
+                                    <img src={funblocks_logo} alt="funblocks_logo" width = "120" height="100"/>
                                 </div>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                                     suffered alteration in some form, by injected humour, or randomised words which
