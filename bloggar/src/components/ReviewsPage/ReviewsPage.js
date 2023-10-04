@@ -4,6 +4,8 @@ import ReviewSidebar from '../ReviewSidebar/ReviewSidebar.js'
 import VideoModal from '../ModalVideo/VideoModal.js'
 import Guides from '../Guides/Guides.js'
 import MoreReviews from '../MoreReviews/MoreReviews.js'
+import Reviews from '../Reviews/Reviews.js'
+
 
 import blogs from '../../api/blogs.js'
 
@@ -72,7 +74,7 @@ const ReviewsPage = (props) => {
                     <ReviewSidebar blLeft={props.blLeft}/>
                 </div>
                 <MoreReviews/>
-
+                <MoreReviews/>
             </div>
         </section>
 
