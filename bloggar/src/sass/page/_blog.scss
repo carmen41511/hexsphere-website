@@ -20,6 +20,44 @@
 		}
 	}
 
+// Reviews Blog
+	.wpo-blog-reviews-content {
+
+		.post {
+			display: flex;
+			margin-bottom: 70px;
+
+			@include media-query(991px) {
+				margin-bottom: 50px;
+				display: block;
+				// display: revert;
+			}
+
+			@include media-query(767px) {
+				margin-bottom: 40px;
+				display: block;
+				// display: revert;
+
+			}
+		}
+
+		.entry-details {
+			width: 55%;
+			padding-left:25px;
+			@include media-query(991px) {
+				width: 100%;
+			}
+
+			@include media-query(767px) {
+				width: 100%;
+
+			}
+
+		}
+	}
+
+// end of Reviews Blog
+
 	.entry-meta {
 		list-style: none;
 		overflow: hidden;
