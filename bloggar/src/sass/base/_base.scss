@@ -26,28 +26,35 @@ p {
 }
 
 h1,
-h2,
+h2 {
+    font-family: $heading-font;
+}
 h3,
 h4,
 h5,
 h6 {
     color: $heading-color;
-    font-family: $heading-font;
+    // font-family: $heading-font;
+    font-family: $base-font;
 }
 
 ul {
     padding-left: 0;
     margin: 0;
     list-style: none;
+    font-family: $heading-font;
 }
+
 
 a {
     text-decoration: none;
     @include transition-time(0.2s);
+    // font-family: $heading-font;
 }
 
 a:hover {
     text-decoration: none;
+    // font-family: $heading-font;
 }
 
 

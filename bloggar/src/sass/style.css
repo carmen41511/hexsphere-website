@@ -56,6 +56,36 @@ Version:        1.0.0
 /*---------------------------
 	Fonts
 ----------------------------*/
+
+@font-face {
+  font-family: "Arcade Classic";
+  src: url("../fonts/ARCADECLASSIC.TTF") format("ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@font-face {
+  font-family: "DotGothic16";
+  src: url("../fonts/DotGothic16-Regular.woff2") format("woff2")
+  /* src: url("https://db.onlinewebfonts.com/t/02a729900975d9448208fbb5482247af.eot");
+  src: url("https://db.onlinewebfonts.com/t/02a729900975d9448208fbb5482247af.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/02a729900975d9448208fbb5482247af.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/02a729900975d9448208fbb5482247af.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/02a729900975d9448208fbb5482247af.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/02a729900975d9448208fbb5482247af.svg#DotGothic16")format("svg"); */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("../fonts/PressStart2P-Regular.ttf") format("ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url("../fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf") format("ttf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 @font-face {
   font-family: 'Futura PT';

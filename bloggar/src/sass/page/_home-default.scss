@@ -915,6 +915,34 @@
                     }
                 }
 
+                h3 {
+                    font-size: 20px;
+                    font-family: $base-font;
+                    margin-bottom: 20px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    margin-top: 10px;
+
+
+                    @media(max-width:1400px) {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        line-height: 26px;
+                    }
+
+                    @media(max-width:1200px) {
+                        font-size: 20px;
+                    }
+
+                    a {
+                        color: $text-color;
+
+                        &:hover {
+                            color: $theme-primary-color;
+                        }
+                    }
+                }
+
                 p {
                     font-size: 16px;
                     color: $text-color;
@@ -1378,6 +1406,36 @@
 
                     @media(max-width:1200px) {
                         font-size: 20px;
+                    }
+
+                    a {
+                        color: $text-color;
+
+                        &:hover {
+                            color: $theme-primary-color;
+                        }
+                    }
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-family: $base-font;
+                    margin-bottom: 20px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    margin-top: 10px;
+
+
+                    @media(max-width:1400px) {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        line-height: 26px;
+                        font-family: $base-font;
+                    }
+
+                    @media(max-width:1200px) {
+                        font-size: 20px;
+                        font-family: $base-font;
                     }
 
                     a {

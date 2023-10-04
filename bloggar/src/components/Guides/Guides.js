@@ -27,7 +27,7 @@ const Guides = () => {
                                                 <div className="thumb">{blog.thumb}</div>
                                             </div>
                                             <div className="wpo-blog-content">
-                                                <h2><Link onClick={ClickHandler} to={`/sponsor-single/${blog.slug}`}>{blog.title}</Link></h2>
+                                                <h3><Link onClick={ClickHandler} to={`/sponsor-single/${blog.slug}`}>{blog.title}</Link></h3>
                                                 <ul>
                                                     <li><img src={blog.avater} alt="" />
                                                     </li>
