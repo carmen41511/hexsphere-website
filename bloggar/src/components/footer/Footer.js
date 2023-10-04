@@ -38,7 +38,7 @@ const Footer = (props) => {
                                     <h3>Important Link</h3>
                                 </div>
                                 <ul>
-                                    <li><Link to="/blog">News</Link></li>
+                                    <li><Link to="/news">News</Link></li>
                                     <li><Link to="/blog">Career </Link></li>
                                     <li><Link to="/blog">Technology</Link></li>
                                     <li><Link to="/blog">Startups</Link></li>
@@ -52,9 +52,10 @@ const Footer = (props) => {
                                     <h3>Browse by Tag </h3>
                                 </div>
                                 <ul>
-                                    <li><Link to="/travels">Travel</Link></li>
+                                    {/* <li><Link to="/travels">Travel</Link></li> */}
+                                    <li><Link to="/news">News</Link></li>
                                     <li><Link to="/reviews">Reviews</Link></li>
-                                    <li><Link to="/videos">videos</Link></li>
+                                    <li><Link to="/videos">Videos</Link></li>
                                     <li><Link to="/blog">Marketing</Link></li>
                                     <li><Link to="/blog">Medical</Link></li>
                                     <li><Link to="/blog">Sports</Link></li>

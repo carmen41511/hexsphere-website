@@ -33,6 +33,7 @@ import VideoNewsSingle from '../VideoNewsSingle/VideoNewsSingle';
 import GuidesBlogPage from '../GuidesBlogPage/GuidesBlogPage';
 import ReviewsBlogPage from '../ReviewsBlogPage/ReviewsBlogPage';
 import TravelBlogPage from '../TravelBlogPage/TravelBlogPage';
+import NewsBlogPage from '../NewsBlogPage/NewsBlogPage';
 
 
 const AllRoute = () => {
@@ -57,6 +58,7 @@ const AllRoute = () => {
           <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
           <Route path='blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
           <Route path='blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
+          <Route path='news' element={<NewsBlogPage />} />
           <Route path='videos' element={<VideosBlogPage />} />
           <Route path='guides' element={<GuidesBlogPage />} />
           <Route path='reviews' element={<ReviewsBlogPage />} />
