@@ -27,7 +27,8 @@ import HighlightSingle from '../HighlightSingle/HighlightSingle';
 import SponsoredSingle from '../SponsoredSingle/SponsoredSingle';
 import FeaturesSingle from '../FeaturesSingle/FeaturesSingle';
 import VideoNewsSingle from '../VideoNewsSingle/VideoNewsSingle';
-import FoodBlogPage from '../FoodBlogPage/FoodBlogPage';
+// import FoodBlogPage from '../FoodBlogPage/FoodBlogPage';
+import GuidesBlogPage from '../GuidesBlogPage/GuidesBlogPage';
 import ReviewsBlogPage from '../ReviewsBlogPage/ReviewsBlogPage';
 import TravelBlogPage from '../TravelBlogPage/TravelBlogPage';
 
@@ -55,8 +56,8 @@ const AllRoute = () => {
           <Route path='blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
           <Route path='blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
           <Route path='lifestyle' element={<LifeStylePage />} />
-          <Route path='foods' element={<FoodBlogPage />} />
-          <Route path='business' element={<ReviewsBlogPage />} />
+          <Route path='guides' element={<GuidesBlogPage />} />
+          <Route path='reviews' element={<ReviewsBlogPage />} />
           <Route path='travels' element={<TravelBlogPage />} />
           <Route path="shop" element={<ShopPage />} />
           <Route path='product-single/:id' element={<ProductSinglePage />} />

@@ -53,13 +53,13 @@ const Footer = (props) => {
                                 </div>
                                 <ul>
                                     <li><Link to="/travels">Travel</Link></li>
-                                    <li><Link to="/business">Business</Link></li>
+                                    <li><Link to="/reviews">Reviews</Link></li>
                                     <li><Link to="/lifestyle">Lifestyle</Link></li>
                                     <li><Link to="/blog">Marketing</Link></li>
                                     <li><Link to="/blog">Medical</Link></li>
                                     <li><Link to="/blog">Sports</Link></li>
                                     <li><Link to="/blog">Career</Link></li>
-                                    <li><Link to="/foods">Foods</Link></li>
+                                    <li><Link to="/guides">Guides</Link></li>
                                 </ul>
                             </div>
                         </div>

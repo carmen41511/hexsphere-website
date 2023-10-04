@@ -4,17 +4,19 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Foods from '../../components/Foods/Foods';
+import GuidesPage from '../../components/GuidesPage/GuidesPage';
 
-const FoodBlogPage =() => {
+const GuidesBlogPage =() => {
     return(
         <Fragment>
             <Navbar/>
-            <PageTitle pageTitle={'Food News'} pagesub={'Blog'}/> 
-            <Foods/>
+            <PageTitle pageTitle={'Guides'} pagesub={'Blog'}/> 
+            {/* <Foods/> */}
+            <GuidesPage/>
             <Footer/>
             <Scrollbar/>
         </Fragment>
     )
 };
-export default FoodBlogPage;
+export default GuidesBlogPage;
 
