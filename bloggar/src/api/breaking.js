@@ -65,5 +65,33 @@ const Breaking = [
         comment:'35',
         blClass:'format-standard-image',
     },
+    {
+        id: '5',
+        title: '5 unbelievable secret about choosing right fuirniture',
+        slug:"Fashion-Summer",
+        screens: blogImg1,
+        thumb:'Fasion',
+        description: 'You can customize the view Blog posts with a simple mouse click and immediately see the result of your changes.',
+        author: 'Marilou Kelleher',
+        authorTitle:'Sineor Consultant',
+        create_at: '25 Dec, 2023',
+        blogSingleImg:blogSingleImg1, 
+        comment:'35',
+        blClass:'format-standard-image',
+    },
+    {
+        id: '6',
+        title: '5 unbelievable secret about choosing right fuirniture',
+        slug:"Fashion-Summer",
+        screens: blogImg1,
+        thumb:'Fasion',
+        description: 'You can customize the view Blog posts with a simple mouse click and immediately see the result of your changes.',
+        author: 'Marilou Kelleher',
+        authorTitle:'Sineor Consultant',
+        create_at: '25 Dec, 2023',
+        blogSingleImg:blogSingleImg1, 
+        comment:'35',
+        blClass:'format-standard-image',
+    }
 ];
 export default Breaking;

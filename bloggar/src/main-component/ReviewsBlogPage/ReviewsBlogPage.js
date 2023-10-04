@@ -3,18 +3,20 @@ import PageTitle from '../../components/pagetitle/PageTitle'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar'
-import Business from '../../components/Business/Business';
+// import Business from '../../components/Business/Business';
+import Reviews from '../../components/Reviews/Reviews';
+import ReviewsPage from '../../components/ReviewsPage/ReviewsPage'
 
-const BusinessBlogPage =() => {
+const ReviewsBlogPage =() => {
     return(
         <Fragment>
             <Navbar/>
-            <PageTitle pageTitle={'Business News'} pagesub={'Blog'}/> 
-            <Business/>
+            <PageTitle pageTitle={'Reviews'} pagesub={'Blog'}/> 
+            <ReviewsPage/>
             <Footer/>
             <Scrollbar/>
         </Fragment>
     )
 };
-export default BusinessBlogPage;
+export default ReviewsBlogPage;
 

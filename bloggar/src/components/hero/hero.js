@@ -25,7 +25,27 @@ const Hero = () => {
                         <div className="col-lg-12">
                             
                             <div className="wpo-blog-grids -gallerycontainer clearfix">
-                                
+                            {/* <div className="news-explorer">
+                                    <div className="news-sidebar">
+                            
+                                        <div className="widget recent-post-widget">
+                                            <h3>News Explorer</h3>
+                                            {Highlight.slice(0, 7).map((blog, bitem) => (
+                                                <div className="posts" key={bitem}>
+                                                    <div className="post">
+                                                        <div className="details">
+                                                            <span className="date">{blog.create_at} </span>
+                                                            <h4><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            ))}
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                 */}
                                 {heroBlog.slice(0, 1).map((blog, bitem) => (
                                     <div className="grid" key={bitem}>
                                         <div className="widget top-news-widget">
