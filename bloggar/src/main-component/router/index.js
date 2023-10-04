@@ -10,7 +10,9 @@ import ProductSinglePage from '../ProductSinglePage';
 import CartPage from '../CartPage';
 import CheckoutPage from '../CheckoutPage';
 import OrderRecived from '../OrderRecived';
-import LifeStylePage from '../LifeStylePage/LifeStylePage'
+// import LifeStylePage from '../LifeStylePage/LifeStylePage'
+import VideosPage from '../../components/VideosPage/VideosPage';
+import VideosBlogPage from '../VideosBlogPage/VideosBlogPage';
 import BlogPage from '../BlogPage/BlogPage'
 import BlogPageLeft from '../BlogPageLeft/BlogPageLeft'
 import BlogPageFullwidth from '../BlogPageFullwidth/BlogPageFullwidth'
@@ -55,7 +57,7 @@ const AllRoute = () => {
           <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
           <Route path='blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
           <Route path='blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
-          <Route path='lifestyle' element={<LifeStylePage />} />
+          <Route path='videos' element={<VideosBlogPage />} />
           <Route path='guides' element={<GuidesBlogPage />} />
           <Route path='reviews' element={<ReviewsBlogPage />} />
           <Route path='travels' element={<TravelBlogPage />} />

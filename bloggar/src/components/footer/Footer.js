@@ -54,7 +54,7 @@ const Footer = (props) => {
                                 <ul>
                                     <li><Link to="/travels">Travel</Link></li>
                                     <li><Link to="/reviews">Reviews</Link></li>
-                                    <li><Link to="/lifestyle">Lifestyle</Link></li>
+                                    <li><Link to="/videos">videos</Link></li>
                                     <li><Link to="/blog">Marketing</Link></li>
                                     <li><Link to="/blog">Medical</Link></li>
                                     <li><Link to="/blog">Sports</Link></li>

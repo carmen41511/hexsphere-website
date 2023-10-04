@@ -9,7 +9,7 @@ const LifeStylePage =() => {
     return(
         <Fragment>
             <Navbar/>
-            <PageTitle pageTitle={'Life Style News'} pagesub={'Blog'}/> 
+            <PageTitle pageTitle={'Videos'} pagesub={'Blog'}/> 
             <LifeStyle/>
             <Footer/>
             <Scrollbar/>
