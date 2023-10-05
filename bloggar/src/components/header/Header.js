@@ -6,6 +6,8 @@ import Logo from '../../images/logo.png'
 import Logo2 from '../../images/logo2.png'
 import Breaking from '../../api/breaking'
 import funblocks_logo from '../../images/funblocks_logo.png'
+import funblocks_logo_nobg from '../../images/funblocks_logo_nobg.png'
+
 
 
 const Header = (props) => {
@@ -33,7 +35,7 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={funblocks_logo}
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={funblocks_logo_nobg}
                                         alt="" width = "120" height="100"/></Link>
                                 </div>
                             </div>

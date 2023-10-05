@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+#`npm install pixel-borders --save-dev --legacy-peer-deps`
+To install pixel borders (https://nigelotoole.github.io/pixel-borders/)
+
+
 ### `npm start`
 
 Runs the app in the development mode.\

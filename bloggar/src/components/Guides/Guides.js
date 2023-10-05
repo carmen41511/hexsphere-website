@@ -10,13 +10,13 @@ const Guides = () => {
     }
 
     return (
-        <section className="wpo-blog-sponsored-section section-padding">
+        <section className="wpo-blog-guides-section section-padding">
             <div className="container">
                 <div className="wpo-section-title">
                     <h2>Guides</h2>
                 </div>
                 <div className="row">
-                    <div className="wpo-blog-sponsored-wrap">
+                    <div className="wpo-blog-guides-wrap">
                         <div className="wpo-blog-items">
                             <div className="row">
                                 {Sponsored.slice(0, 6).map((blog, bitem) => (
@@ -24,8 +24,7 @@ const Guides = () => {
                                         <div className="wpo-blog-item">
                                             <div className="wpo-blog-img">
                                                 <img src={blog.screens} alt="" />
-                                                <div className="thumb">{blog.thumb}</div>
-                                            </div>
+                                                <div className="thumb">{blog.thumb}</div>                                            </div>
                                             <div className="wpo-blog-content">
                                                 <h3><Link onClick={ClickHandler} to={`/sponsor-single/${blog.slug}`}>{blog.title}</Link></h3>
                                                 <ul>

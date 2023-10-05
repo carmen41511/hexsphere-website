@@ -805,16 +805,25 @@
                 position: relative;
                 border-radius: 6px;
 
+                @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
+
                 .thumb {
                     position: absolute;
                     left: 15px;
                     top: 15px;
-                    padding: 7px 25px 6px;
+                    padding: 5px 15px 3px;
                     background: $theme-primary-color;
                     color: $white;
                     text-transform: uppercase;
                     font-size: 14px;
                     border-radius: 5px;
+                    @include pixel-borders(
+                        $corner-size: 2,
+                        $border-size: 4px,
+                        $border-color: $theme-primary-color,
+                        $border-inset-color: false
+                        );
+
                 }
 
                 img {
@@ -1461,6 +1470,194 @@
         }
     }
 }
+
+
+/* 3.guides wpo-blog-guides-section */
+
+.wpo-blog-guides-section {
+    padding-bottom: 50px;
+
+    &.s2{
+        padding-bottom: 0;
+    }
+    
+    .wpo-blog-guides-wrap {
+        position: relative;
+        z-index: 1;
+
+        .wpo-blog-item {
+            margin-bottom: 30px;
+
+            .wpo-blog-img {
+                overflow: hidden;
+                position: relative;
+                border-radius: 6px;
+
+
+                @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
+
+                .thumb {
+                    position: absolute;
+                    left: 15px;
+                    top: 15px;
+                    padding: 5px 15px 3px;
+                    background: $theme-primary-color;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    @include pixel-borders(
+                        $corner-size: 2,
+                        $border-size: 4px,
+                        $border-color: $theme-primary-color,
+                        $border-inset-color: false
+                        );
+
+                }
+
+                img {
+                    width: 100%;
+                    -webkit-filter: grayscale(0);
+                    -moz-filter: grayscale(0);
+                    -o-filter: grayscale(0);
+                    -ms-filter: grayscale(0);
+                    filter: grayscale(0);
+                    transition: all .3s;
+                    transform: scale(1);
+                    border-radius: 6px;
+                }
+            }
+
+            &:hover {
+                .wpo-blog-img {
+                    img {
+                        -webkit-filter: grayscale(100%);
+                        -moz-filter: grayscale(100%);
+                        -o-filter: grayscale(100%);
+                        -ms-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+
+            .wpo-blog-content {
+                padding-top: 20px;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    margin-bottom: 15px;
+                    align-items: center;
+
+                    li {
+                        color: $theme-primary-color-s2;
+                        font-size: 16px;
+
+                        &:last-child {
+                            padding-left: 30px;
+                            position: relative;
+
+                            &:before {
+                                position: absolute;
+                                left: 10px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 6px;
+                                height: 6px;
+                                content: "";
+                                background: $theme-primary-color;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        a {
+                            color: $theme-primary-color-s2;
+
+                            &:hover {
+                                color: $theme-primary-color;
+                            }
+                        }
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                h2 {
+                    font-size: 20px;
+                    font-family: $heading-font;
+                    margin-bottom: 20px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    margin-top: 10px;
+
+
+                    @media(max-width:1400px) {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        line-height: 26px;
+                    }
+
+                    @media(max-width:1200px) {
+                        font-size: 20px;
+                    }
+
+                    a {
+                        color: $text-color;
+
+                        &:hover {
+                            color: $theme-primary-color;
+                        }
+                    }
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-family: $base-font;
+                    margin-bottom: 20px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    margin-top: 10px;
+
+
+                    @media(max-width:1400px) {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        line-height: 26px;
+                        font-family: $base-font;
+                    }
+
+                    @media(max-width:1200px) {
+                        font-size: 20px;
+                        font-family: $base-font;
+                    }
+
+                    a {
+                        color: $text-color;
+
+                        &:hover {
+                            color: $theme-primary-color;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    color: $text-color;
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+}
+
 
 /* 3.reviewsBlog wpo-blog-reviews-section */
 

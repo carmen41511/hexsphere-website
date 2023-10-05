@@ -32,8 +32,9 @@ const HomePage =() => {
                 </div>
             </div>
             {/* <Hero/> */}
-            <Videos/>
             <Guides/>
+            <Videos/>
+
             <Reviews/>
             {/* <SponsoredNews/> */}
             {/* can make BreakingNews into video section */}
@@ -41,6 +42,7 @@ const HomePage =() => {
             {/* <HighlightsNews/> */}
             
             {/* <Subscribe/> */}
+
             <Footer/> 
             <Scrollbar/>
         </Fragment>

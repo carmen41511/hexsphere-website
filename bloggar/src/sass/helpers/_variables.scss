@@ -107,3 +107,35 @@ $heading-color: $dark-gray;
 $border-color: #eeeeee;
 $border-color-s2: #eef0fc;
 $border-color-black: #3c3c40;
+
+
+/*---------------------------
+	Pixels
+----------------------------*/
+// @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
+
+
+// Add pixel borders with default options
+// @include pixel-borders();
+
+// // Available options
+// @include pixel-borders(
+//   $corner-size: 1,
+//   $border-size: 4px,
+//   $border-color: #000,
+//   $border-inset-color: false
+// );
+
+// // Helper method to create custom styles e.g. colour themes, inset border, highlight
+// @include pixel-box(
+//   $corner-size,
+//   $border-size,
+//   $background-color,
+//   $border-color: false,
+//   $border-inset: true,
+//   $border-inset-size: false,
+//   $border-inset-color: false,
+//   $border-inset-sides: false,
+//   $border-inset-color-br: false,
+//   $border-inset-color-tl: false 
+// );
