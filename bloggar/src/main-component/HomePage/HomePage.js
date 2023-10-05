@@ -10,12 +10,28 @@ import HighlightsNews from '../../components/HighlightsNews/HighlightsNews';
 import SponsoredNews from '../../components/SponsoredNews/SponsoredNews';
 import Footer from '../../components/footer/Footer';
 import Subscribe from '../../components/Subscribe/Subscribe';
+import Highlight from '../../api/Highlight';
+import NewsSidebar from '../../components/NewsSidebar/NewsSidebar';
 
 const HomePage =() => {
     return(
         <Fragment>
             <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'}/>
-            <Hero/>
+            <div className="main-blog-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-9">
+                            <Hero />
+                            {/* <FeaturesNews />
+                            <VideoNews />
+                            <HighlightsNews colClass={'col-lg-12'} hideClass={'d-none'} /> */}
+                        </div>
+                        <NewsSidebar />
+                        
+                    </div>
+                </div>
+            </div>
+            {/* <Hero/> */}
             <Videos/>
             <Guides/>
             <Reviews/>
@@ -24,7 +40,7 @@ const HomePage =() => {
             {/* <BreakingNews/> */}
             {/* <HighlightsNews/> */}
             
-            {/* <Subscribe/> */}
+            <Subscribe/>
             <Footer/> 
             <Scrollbar/>
         </Fragment>

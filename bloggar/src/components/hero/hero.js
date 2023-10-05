@@ -1,115 +1,57 @@
-import React from "react";
-import { Link } from 'react-router-dom'
-import heroBlog from '../../api/heroBlogs'
-import Highlight from '../../api/Highlight'
+import React from 'react'
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import heroBlog from '../../api/heroBlogs'
+import { Link } from 'react-router-dom'
 
 
-
-const Hero = () => {
-
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
-
+const Hero = (props) => {
     return (
-        <div className="wpo-blog-hero-area">
-            <div className="container">
-                <div className="sortable-gallery">
-                    <div className="gallery-filters"></div>
-                    <div className="row">
-                        <div className="col-lg-12">
-                            
-                            <div className="wpo-blog-grids -gallerycontainer clearfix">
-                            {/* <div className="news-explorer">
-                                    <div className="news-sidebar">
-                            
-                                        <div className="widget recent-post-widget">
-                                            <h3>News Explorer</h3>
-                                            {Highlight.slice(0, 7).map((blog, bitem) => (
-                                                <div className="posts" key={bitem}>
-                                                    <div className="post">
-                                                        <div className="details">
-                                                            <span className="date">{blog.create_at} </span>
-                                                            <h4><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            ))}
 
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                 */}
-                                {heroBlog.slice(0, 1).map((blog, bitem) => (
-                                    <div className="grid" key={bitem}>
-                                        <div className="widget top-news-widget">
-                                            {/* <h3>Today's Top Highlights</h3> */}
-                                        </div>
-                                        <div className="img-holder">
-                                            <img src={blog.screens} alt className="img img-responsive" />
-                                            <div className="wpo-blog-content">
-                                                <div className="thumb">{blog.thumb}</div>
+        <section className="wpo-hero-slider">
+            <div className="swiper-container">
+                <div className="swiper-wrapper">
+                    <Swiper
+                        // install Swiper modules
+                        modules={[Navigation, Pagination, A11y]}
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        pagination={{ clickable: true }}
+                        loop={true}
+                        speed={1800}
+                        parallax={true}
+                        navigation
+                    >
+
+                        {heroBlog.slice(4, 6).map((blog, bitem) => (
+                            <SwiperSlide key={bitem}>
+                                <div className="swiper-slide" style={{ backgroundImage: `url(${blog.screens})` }}>
+                                    <div className="slide-inner slide-bg-image"
+                                        data-background="assets/images/slider/slide-1.jpg">
+                                        <div className="slide-content">
+                                            <div data-swiper-parallax="300" className="slide-title">
                                                 <h2><Link to={`/hero-blog-single/${blog.slug}`}>{blog.title}</Link></h2>
+                                            </div>
+                                            <div data-swiper-parallax="400" className="slide-text">
                                                 <p>{blog.description}</p>
-                                                <ul>
-                                                    <li><img src={blog.avater} alt="" /></li>
-                                                    <li>By <Link to={`/hero-blog-single/${blog.slug}`}>{blog.author}</Link></li>
-                                                    <li>{blog.create_at}</li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                ))}
-
-                                <div className="news-explorer">
-                                    <div className="news-sidebar">
-                            
-                                        <div className="widget recent-post-widget">
-                                            <h3>News Explorer</h3>
-                                            {Highlight.slice(0, 7).map((blog, bitem) => (
-                                                <div className="posts" key={bitem}>
-                                                    <div className="post">
-                                                        <div className="details">
-                                                            <span className="date">{blog.create_at} </span>
-                                                            <h4><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            ))}
-
-                                        </div>
-                                        
-                                    </div>
+                                    <div className="thumb">{blog.thumb}</div>
                                 </div>
+                            </SwiperSlide>
+                        ))}
 
-                                {/* <div className="grid s2">
-                                    {heroBlog.slice(2, 4).map((blog, bitem) => (
-                                        <div className="img-holder" key={bitem}>
-                                            <img src={blog.screens} alt className="img img-responsive" />
-                                            <div className="wpo-blog-content">
-                                                <div className="thumb">{blog.thumb}</div>
-                                                <h2><Link to={`/hero-blog-single/${blog.slug}`}>{blog.title}</Link></h2>
-                                                <ul>
-                                                    <li>By <Link to={`/hero-blog-single/${blog.slug}`}>{blog.author}</Link></li>
-                                                    <li>{blog.create_at}</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
+                        ...
+                    </Swiper>
+
+
                 </div>
-
             </div>
-        </div>
+        </section>
     )
 }
 
