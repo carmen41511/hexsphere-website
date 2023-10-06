@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import Highlight from '../../api/Highlight'
 import add from '../../images/add.jpg'
+import ReviewSidebar from '../ReviewSidebar/ReviewSidebar.js'
+
 // 参考 HighlightsNews.js
 
 const Reviews = (props) => {
@@ -16,9 +18,9 @@ const Reviews = (props) => {
                 {/* <div className="wpo-section-title">
                     <h2>Reviews</h2>
                 </div> */}
-                <div className="row">
+                {/* <div className="row"> */}
 
-                    <div className={`col col-lg-8 col-12 ${props.colClass}`}>
+                    {/* <div className={`col col-lg-8 col-12 ${props.colClass}`}> */}
                     <div className="wpo-section-title">
                         <h2>Reviews</h2>
                     </div>
@@ -26,8 +28,8 @@ const Reviews = (props) => {
                             <div className="wpo-reviews-items">
                                 <div className="row">
                                     {Highlight.slice(0, 4).map((blog, bitem) => (
-                                        <div className="col col-lg-6 col-md-6 col-12" key={bitem}>
-                                            <div className="wpo-reviews-item">
+                                        <div className="col col-lg-6 col-md-6 col-12 pixel-box" key={bitem}>
+                                            <div className="wpo-reviews-item ">
                                                 <div className="wpo-reviews-img">
                                                     <img src={blog.screens} alt="" />
                                                     <div className="thumb">{blog.thumb}</div>
@@ -49,9 +51,9 @@ const Reviews = (props) => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 
-                    <div className={`col col-lg-4 col-12 ${props.hideClass}`}>
+                    {/* <div className={`col col-lg-4 col-12 ${props.hideClass}`}>
                         <div className="wpo-section-title">
                             <h2>All News</h2>
                         </div>
@@ -72,8 +74,9 @@ const Reviews = (props) => {
                         </div>
                             
                         </div>
-                    </div>
-                </div>
+                    </div> */}
+                    {/* <ReviewSidebar blLeft={props.blLeft}/> */}
+                {/* </div> */}
             </div>
         </section>
     )

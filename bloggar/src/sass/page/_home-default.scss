@@ -416,7 +416,7 @@
 /* 3.vid wpo-videos-area */
 
 .wpo-videos-area {
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 50px;
     @media(max-width:767px) {
         padding-top: 0px;
@@ -781,25 +781,58 @@
 /* 3.reviews wpo-reviews-section*/ 
 
 .wpo-reviews-section {
+    margin-top: 30px;
 
     .wpo-reviews-wrap {
         position: relative;
         z-index: 1;
         border: 1px solid $border-color;
-        padding: 30px;
+        // padding: 30px;
+        width: 100%;
+        
+
+        @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";  
+
+        .pixel-box {
+            @include pixel-box(
+                $corner-size: 1, 
+                $border-size: 4px, 
+                $background-color: #DBE9F8, 
+                $border-inset-sides: 'all',
+                );
+            // margin: 1px;
+            @media(max-width:767px) {
+                margin-bottom: 15px;
+            }
+    
+            @media(max-width:575px) {
+                margin-bottom: 15px;
+            }
+        
+
+        }
+        
 
         @media(max-width:767px) {
             padding-bottom: 60px;
+            // margin-bottom: 10px;
+            // width: 40%;
         }
 
         @media(max-width:575px) {
             padding: 15px;
+            // margin-bottom: 10px;
+
+            // width: 40%;
         }
 
         .wpo-reviews-item {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid $border-color;
+
+          
+            
 
             .wpo-reviews-img {
                 overflow: hidden;
@@ -813,7 +846,8 @@
                     left: 15px;
                     top: 15px;
                     padding: 5px 15px 3px;
-                    background: $theme-primary-color;
+                    // background: $theme-primary-color;
+                    background: #F9C62C;
                     color: $white;
                     text-transform: uppercase;
                     font-size: 14px;
@@ -821,7 +855,8 @@
                     @include pixel-borders(
                         $corner-size: 2,
                         $border-size: 4px,
-                        $border-color: $theme-primary-color,
+                        // $border-color: $theme-primary-color,
+                        $border-color: #F9C62C,
                         $border-inset-color: false
                         );
 
@@ -1504,17 +1539,6 @@
             
         }
 
-        // .col-xl-3 {
-        //     width: 24%;
-        //     margin: 2px;
-        //     flex: 0 0 auto;
-        //      @media (max-width: 1200px) {
-        //         width: 24%;
-        //         margin: 2px;
-        //         flex: 0 0 auto;
-                
-        //      }
-        // }
 
         .wpo-blog-item {
             margin-bottom: 30px;
@@ -1522,16 +1546,16 @@
             
             
             
-            .pixel-box--light-custom {
-                @include pixel-box(
-                    $corner-size: 1, 
-                    $border-size: 10px, 
-                    $background-color: #DBE9F8, 
-                    $border-inset-color: #DBE9F8, 
-                    $border-inset-sides: 'all',
-                    $border-color:red
-                    );
-                }
+            // .pixel-box--light-custom {
+            //     @include pixel-box(
+            //         $corner-size: 1, 
+            //         $border-size: 10px, 
+            //         $background-color: #DBE9F8, 
+            //         $border-inset-color: #DBE9F8, 
+            //         $border-inset-sides: 'all',
+            //         $border-color:red
+            //         );
+            //     }
 
               .wpo-blog-img {
                 overflow: hidden;
@@ -1544,7 +1568,8 @@
                     left: 15px;
                     top: 15px;
                     padding: 5px 15px 3px;
-                    background: $theme-primary-color;
+                    // background: $theme-primary-color;
+                    background: #F9C62C;
                     color: $white;
                     text-transform: uppercase;
                     font-size: 14px;
@@ -1552,7 +1577,8 @@
                     @include pixel-borders(
                         $corner-size: 2,
                         $border-size: 4px,
-                        $border-color: $theme-primary-color,
+                        // $border-color: $theme-primary-color,
+                        $border-color: #F9C62C,
                         $border-inset-color: false
                         );
 

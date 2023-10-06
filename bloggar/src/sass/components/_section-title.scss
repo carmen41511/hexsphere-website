@@ -21,9 +21,10 @@
 			left: 0;
 			bottom: 0;
 			width: 100px;
-			height: 5px;
+			height: 6px;
 			border-radius: 6px;
 			background: $theme-primary-color;
+			// background: #F9C62C;
 			content: "";
 		}
 		&:after{
@@ -31,9 +32,10 @@
 			left: 110px;
 			bottom: 0;
 			width: 30px;
-			height: 5px;
+			height: 6px;
 			border-radius: 6px;
 			background: $theme-primary-color;
+			// background: #F9C62C;
 			content: "";
 		}
 

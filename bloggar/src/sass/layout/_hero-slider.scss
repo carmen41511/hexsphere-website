@@ -3,12 +3,21 @@
 --------------------------------------------------------------*/
 
 /*3.1 wpo-hero-slider*/
+@import "node_modules/pixel-borders/src/styles/pixel-borders.scss";  
+
 .wpo-hero-slider {
+	margin-top: 20px;
 	width: 100%;
 	height: 490px;
 	display: flex;
 	position: relative;
 	z-index: 0;
+	@include pixel-borders(
+		$corner-size: 2,
+		$border-size: 3px,
+		$border-color: gray,
+		$border-inset-color: false
+		);
 
 	@media (max-width: 991px) {
 		height: 400px;
@@ -40,7 +49,8 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		padding-top: 15px;
+		// padding-top: 15px;
+		padding: 10px;
 	}
 
 	.slide-inner {

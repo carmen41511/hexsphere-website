@@ -11,7 +11,11 @@ import SponsoredNews from '../../components/SponsoredNews/SponsoredNews';
 import Footer from '../../components/footer/Footer';
 import Subscribe from '../../components/Subscribe/Subscribe';
 import Highlight from '../../api/Highlight';
+import NewsExplorer from '../../components/NewsAllSidebar/NewsAllSidebar';
+import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
 import NewsSidebar from '../../components/NewsSidebar/NewsSidebar';
+// import ReviewSidebar from '../ReviewSidebar/ReviewSidebar.js';
+
 
 const HomePage =() => {
     return(
@@ -22,20 +26,25 @@ const HomePage =() => {
                     <div className="row">
                         <div className="col-lg-9">
                             <Hero />
+                            <Reviews/>
                             {/* <FeaturesNews />
                             <VideoNews />
                             <HighlightsNews colClass={'col-lg-12'} hideClass={'d-none'} /> */}
                         </div>
-                        <NewsSidebar />
+                        {/* <HomeSidebar/> */}
+                        <NewsSidebar/>
                         
+
+                        {/* <ReviewSidebar/> */}
                     </div>
                 </div>
             </div>
-            {/* <Hero/> */}
-            <Guides/>
+            
+            
             <Videos/>
+            <Guides/>
 
-            <Reviews/>
+            
             {/* <SponsoredNews/> */}
             {/* can make BreakingNews into video section */}
             {/* <BreakingNews/> */}
