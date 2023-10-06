@@ -2,7 +2,10 @@
 4. wpo-footer
 --------------------------------------------------------------*/
 .wpo-site-footer {
-    background: #191a1f;
+    // background: #191a1f;
+    background-image: url('/images/pixel ground.png');
+    
+    background-size: cover;
     position: relative;
     font-size: 15px;
     overflow: hidden;
