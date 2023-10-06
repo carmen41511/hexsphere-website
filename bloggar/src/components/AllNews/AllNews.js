@@ -12,14 +12,14 @@ const ClickHandler = () => {
 const AllNews = () => {
     return (
 
-        <section className="wpo-blog-highlights-section video-blog">
+        <section className="wpo-all-news-section all-news-blog">
             <div className="wpo-section-title">
                 <h2>All News</h2>
             </div>
             <div className="wpo-blog-highlights-wrap">
                 <div className="wpo-blog-items">
                     {Video.slice(0, 4).map((blog, bitem) => (
-                        <div className="wpo-blog-item" key={bitem}>
+                        <div className="wpo-blog-item pixel-borders" key={bitem}>
                             <div className="wpo-blog-img">
                                 <img src={blog.screens} alt="" />
                                 {/* <VideoModal/> */}
