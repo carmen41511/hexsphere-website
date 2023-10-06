@@ -28,8 +28,8 @@ const Reviews = (props) => {
                             <div className="wpo-reviews-items">
                                 <div className="row">
                                     {Highlight.slice(0, 4).map((blog, bitem) => (
-                                        <div className="col col-lg-6 col-md-6 col-12 pixel-box" key={bitem}>
-                                            <div className="wpo-reviews-item ">
+                                        <div className="col col-lg-6 col-md-6 col-12 " key={bitem}>
+                                            <div className="wpo-reviews-item pixel-box ">
                                                 <div className="wpo-reviews-img">
                                                     <img src={blog.screens} alt="" />
                                                     <div className="thumb">{blog.thumb}</div>
@@ -45,9 +45,12 @@ const Reviews = (props) => {
                                                     <p>{blog.description}</p>
                                                 </div>
                                             </div>
+                                            {/* <div></div> */}
                                         </div>
                                     ))}
-
+                                    <div className="all-reviews-tab">
+                                        <a href="/reviews">All Reviews -&gt;</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

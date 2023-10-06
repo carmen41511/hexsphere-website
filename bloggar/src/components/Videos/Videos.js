@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom'
 import Video from '../../api/Video'
 import VideoModal from "../ModalVideo/VideoModal";
@@ -16,7 +16,7 @@ var settings = {
     speed: 1000,
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     responsive: [
         {
             breakpoint: 1024,
@@ -50,7 +50,14 @@ var settings = {
     ]
 };
 
+
+
 const Videos = () => {
+
+    const [selectedVideo, setSelectedVideo] = useState(null);
+    const handleVideoClick = (video) => {
+        setSelectedVideo(video);
+    }
     return (
 
         <section className="wpo-videos-area video-content">
@@ -72,6 +79,7 @@ const Videos = () => {
                             <div className="wpo-blog-item" key={bitem}>
                                 <div className="wpo-blog-img">
                                     <img src={video.screens} alt="" />
+                                    <p>{video.title}</p>
                                     <VideoModal/>
                                 </div>
                                 <div className="wpo-video-text">
@@ -106,7 +114,7 @@ const Videos = () => {
                                     <div className="wpo-breacking-item">
                                         <div className="wpo-breacking-img">
                                             <img src={video.screens} alt=""/>
-                                            <VideoModal/>
+                                            {/* <VideoModal/> */}
                                         </div>  
                                         {/* <div className="wpo-breacking-text">
                                             <span>{video.create_at}</span>

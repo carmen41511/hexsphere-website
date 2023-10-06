@@ -749,7 +749,7 @@
                         width: 63px;
                         height: 63px;
                         line-height: 65px;
-                        background: $theme-primary-color;
+                        // background: $theme-primary-color;
                         border-radius: 50%;
                         z-index: 1;
                         text-align: center;
@@ -781,7 +781,7 @@
 /* 3.reviews wpo-reviews-section*/ 
 
 .wpo-reviews-section {
-    margin-top: 30px;
+    margin-top: 60px;
 
     .wpo-reviews-wrap {
         position: relative;
@@ -800,7 +800,7 @@
                 $background-color: #DBE9F8, 
                 $border-inset-sides: 'all',
                 );
-            // margin: 1px;
+            margin: 10px;
             @media(max-width:767px) {
                 margin-bottom: 15px;
             }
@@ -825,13 +825,17 @@
 
             // width: 40%;
         }
+        .all-reviews-tab {
+            text-align: end;
+            font-size: 18px;
+        }
+        
 
         .wpo-reviews-item {
-            // margin-bottom: 30px;
-            padding-bottom: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
             border-bottom: 1px solid $border-color;
 
-          
             
 
             .wpo-reviews-img {
@@ -1169,7 +1173,7 @@
         }
 
         .wpo-blog-item {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid $border-color;
 
@@ -1537,6 +1541,11 @@
                 // $border-color:red
                 );
             
+        }
+
+        .all-guides-tab {
+            text-align: end;
+            font-size: 18px;
         }
 
 

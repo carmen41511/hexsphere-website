@@ -17,14 +17,14 @@ const ClickHandler = () => {
 const NewsAllSidebar = (props) => {
     return (
 
-        <div className="widget recent-post-widget">
+        <div className="widget all-news-widget">
             <h3>All News</h3>
             {Highlight.slice(0, 7).map((blog, bitem) => (
                 <div className="posts" key={bitem}>
                     <div className="post">
                         <div className="details">
+                            <h5><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h5>
                             <span className="date">{blog.create_at} </span>
-                            <h4><Link onClick={ClickHandler} to={`/highlight-single/${blog.slug}`}>{blog.title}</Link></h4>
                         </div>
                     </div>
                 </div>
