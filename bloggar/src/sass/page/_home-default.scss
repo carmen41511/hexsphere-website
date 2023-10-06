@@ -417,6 +417,7 @@
 
 .wpo-videos-area {
     padding-top: 20px;
+    padding-bottom: 50px;
     @media(max-width:767px) {
         padding-top: 0px;
     }
@@ -1485,17 +1486,59 @@
         position: relative;
         z-index: 1;
 
+        @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";  
+        .pixel-borders {
+            position: relative;
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+            font-family: "Press Start 2P";
+            @include pixel-box(
+                $corner-size: 1, 
+                $border-size: 5px, 
+                $background-color: #DBE9F8, 
+                // $border-inset-color: #DBE9F8, 
+                $border-inset-sides: 'all',
+                // $border-color:red
+                );
+            
+        }
+
+        // .col-xl-3 {
+        //     width: 24%;
+        //     margin: 2px;
+        //     flex: 0 0 auto;
+        //      @media (max-width: 1200px) {
+        //         width: 24%;
+        //         margin: 2px;
+        //         flex: 0 0 auto;
+                
+        //      }
+        // }
+
         .wpo-blog-item {
             margin-bottom: 30px;
+            padding: 10px;
+            
+            
+            
+            .pixel-box--light-custom {
+                @include pixel-box(
+                    $corner-size: 1, 
+                    $border-size: 10px, 
+                    $background-color: #DBE9F8, 
+                    $border-inset-color: #DBE9F8, 
+                    $border-inset-sides: 'all',
+                    $border-color:red
+                    );
+                }
 
-            .wpo-blog-img {
+              .wpo-blog-img {
                 overflow: hidden;
                 position: relative;
                 border-radius: 6px;
-
-
-                @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
-
+                
+                
                 .thumb {
                     position: absolute;
                     left: 15px;

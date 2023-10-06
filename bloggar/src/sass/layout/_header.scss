@@ -980,16 +980,27 @@
 			text-decoration: none;
 			color: $theme-primary-color;
 		}
+		@import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
+		
 
 		// style for widther screen
 		@include widther(992px) {
 			li {
 				position: relative;
+				@include pixel-borders(
+					$corner-size: 2,
+					$border-size: 3px,
+					$border-color: #B2D1E3,
+					$border-inset-color: false
+					);
+					margin: 10px;
+					background-color: #B2D1E3;
+					box-shadow: -2px 3px 2px #999;
 			}
 
 			>ul>li>a {
 				font-size: 20px;
-				padding: 35px 20px;
+				padding: 10px 10px;
 				display: block;
 				color: #232f4b;
 				font-family: 'DotGothic16';
@@ -1398,8 +1409,9 @@
 
 @media(max-width: 1400px) {
 	.wpo-site-header #navbar>ul>li>a {
-		padding: 30px 10px;
+		padding: 10px 10px;
 		font-size: 18px;
+		background-color: #B2D1E3;
 	}
 
 }
