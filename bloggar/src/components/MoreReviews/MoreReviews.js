@@ -75,15 +75,15 @@ const MoreReviews = () => {
     }
 
     return (
-        <section className="wpo-blog-reviews-section ">
+        <section className="wpo-more-reviews-section ">
             <div className="container">
                 <div className="row">
-                    <div className="wpo-blog-sponsored-wrap">
+                    <div className="wpo-more-reviews-wrap">
                         <div className="wpo-blog-items">
                             <div className="row">
                                 {Sponsored.slice(0, 6).map((blog, bitem) => (
                                     <div className="col col-xl-3 col-lg-6 col-md-6 col-12" key={bitem}>
-                                        <div className="wpo-blog-item">
+                                        <div className="wpo-blog-item pixel-borders">
                                             <div className="wpo-blog-img">
                                                 <img src={blog.screens} alt="" />
                                                 <div className="thumb">{blog.thumb}</div>

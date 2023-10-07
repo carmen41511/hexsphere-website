@@ -13,7 +13,7 @@ const VideoNews = () => {
 
         <section className="wpo-blog-highlights-section video-blog">
             <div className="wpo-section-title">
-                <h2>Video News</h2>
+                <h2>More Videos</h2>
             </div>
             <div className="wpo-blog-highlights-wrap">
                 <div className="wpo-blog-items">
